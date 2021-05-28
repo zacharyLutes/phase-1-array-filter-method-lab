@@ -5,8 +5,8 @@ const findMatching = (driverArray, string) => {
 }
 
 const fuzzyMatch = (driverArray, string) => {
-    let sw = string[0];
-    const match = driverArray.filter(person => person.startsWith(sw));
+    
+    const match = driverArray.filter(person => person.startsWith(string.charAt(0)));
     return match;
 }
 
